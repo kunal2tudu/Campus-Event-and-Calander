@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Calender</title>
+        <link rel="stylesheet" href="cal.css">
+        <link rel="stylesheet" href="calendar.min.css">
+        <link rel="stylesheet" href="calendar.midnight-blue.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="hero">
+            
+
+
+            <div id="calendar"></div>
+
+
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="calendar.min.js"></script>
+
+        <script>
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+
+                calendarEvents: [
+                    {
+                        id: 'event1', // Event's ID (required)
+                        name: "Coke Studio", // Event name (required)
+                        date: "November/7/2023", // Event date (required)
+                        description: "Bollywoods Melody Queens Sunidhi Chauhan and Rashmeet Kaur Mesmerizes LPU Students with Enchanting Performance.", 
+                        type: "Concert", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event2', // Event's ID (required)
+                        name: "Open Intra-University Competition Magnitude-2023", // Event name (required)
+                        date: "November/6/2023", // Event date (required)
+                        description: "Creating the biggest competitive platform for talented students of the university,the Department of Youth Capital at Lovely Professional University organized a five-day Open Intra-University Competition ‘Magnitude 2023’ at the campus.", 
+                        type: "Event", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: "event3",
+                        name: "Spectra",
+                        badge: "11/15 - 11/16", // Event badge (optional)
+                        date: ["November/15/2023", "November/16/2023"], // Date range
+                        description: "LPU organized annual Youth Festival ‘Spectra 2023’ themed on Trans-Inclusive Society. ", // Event description (optional)
+                        type: "event",
+                        color: "#63d867" // Event custom color (optional)
+                    }
+                ]
+            });
+                
+        })
+        </script>
+
+
+    </body>
+</html>
